@@ -19,6 +19,11 @@ def yaml_to_json_from_file(filename, indent=4, sort_keys=True):
 
 def yaml_to_json_from_url(url, indent=4, sort_keys=True):
     import requests
+
+    if '\t' in url:
+        raise ValueError(
+            'URL contains tab characters, which are not allowed in YAML data.')
+
     response = requests.get(url)
     yaml_data = response.content
     return yaml_to_json(yaml_data, indent, sort_keys)
