@@ -13,7 +13,9 @@ def yaml_to_json(yaml_data, indent=4, sort_keys=True):
 
 def yaml_to_json_from_file(filename, indent=4, sort_keys=True):
     with open(filename, 'r') as f:
-        yaml_data = f.read()
+        yaml_data = ''
+        for line in f:
+            yaml_data += line
     return yaml_to_json(yaml_data, indent, sort_keys)
 
 
