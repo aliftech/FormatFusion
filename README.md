@@ -37,3 +37,72 @@ YAMLify is a versatile and user-friendly tool that facilitates seamless conversi
   - Technical Professionals: YAMLify serves as a valuable tool for technical professionals working with data in different formats, ensuring smooth data exchange and manipulation.
 
 Overall, YAMLify stands out as a powerful and versatile tool that simplifies data conversion tasks, promotes data integrity, and enhances productivity for a wide range of users.
+
+# YAMLify Setup Instructions
+
+## Prerequisites
+
+- A computer with Python installed
+- pip installed
+
+## Installation
+
+1. Open a terminal or command prompt.
+2. Run the following command:
+   ```bash
+   pip install yamlify==1.0.0
+   ```
+
+## Usage
+
+1. Import the necessary modules from yamlify:
+
+   ```python
+   import yamlify as yf
+   ```
+
+2. Convert YAML to JSON:
+
+   ```python
+   yaml_data = """
+     name: John Doe
+     age: 30
+     city: New York
+   """
+
+   json_data = yf.yaml_to_json(yaml_data)
+   print(json_data)
+   ```
+
+3. Convert JSON to YAML:
+
+   ```python
+   json_data = """
+   {
+     "name": "John Doe",
+     "age": 30,
+     "city": "New York"
+   }
+   """
+
+   yaml_data = yf.json_to_yaml(json_data)
+   print(yaml_data)
+   ```
+
+**Additional Notes**: You can also convert YAML and JSON data from files
+
+```python
+# Convert YAML file to JSON file
+yaml_file = "data.yaml"
+json_file = "data.json"
+
+yf.yaml_to_json_file(yaml_file, json_file)
+```
+
+```python
+# Convert JSON file to YAML file
+json_file = "data.json"
+yaml_file = "data.yaml"
+
+yf.json_to_yaml_file(json_file, yaml_file)
+```
