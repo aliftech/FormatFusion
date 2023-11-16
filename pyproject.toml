@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "yamlify"
+version = "1.0.0"
+authors = [
+  { name="Wahyu Krisna Aji", email="wahyukrisnaaji32@gmail.com" },
+]
+description = "YAMLify is a versatile and user-friendly tool that facilitates seamless conversion between YAML and JSON data formats. It offers a comprehensive set of features that cater to diverse needs, making it an invaluable asset for developers, data analysts, and anyone working with these data formats."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aliftech/YAMLify"
+"Bug Tracker" = "https://github.com/aliftech/YAMLify/issues"
