@@ -50,59 +50,73 @@ Overall, YAMLify stands out as a powerful and versatile tool that simplifies dat
 1. Open a terminal or command prompt.
 2. Run the following command:
    ```bash
-   pip install yamlify==1.0.0
+   pip install yamlify
    ```
 
 ## Usage
 
-1. Import the necessary modules from yamlify:
-
-   ```python
-   import yamlify as yf
-   ```
-
-2. Convert YAML to JSON:
-
-   ```python
-   yaml_data = """
-     name: John Doe
-     age: 30
-     city: New York
-   """
-
-   json_data = yf.yaml_to_json(yaml_data)
-   print(json_data)
-   ```
-
-3. Convert JSON to YAML:
-
-   ```python
-   json_data = """
-   {
-     "name": "John Doe",
-     "age": 30,
-     "city": "New York"
-   }
-   """
-
-   yaml_data = yf.json_to_yaml(json_data)
-   print(yaml_data)
-   ```
-
-**Additional Notes**: You can also convert YAML and JSON data from files
+**Import the necessary modules from yamlify**
 
 ```python
-# Convert YAML file to JSON file
-yaml_file = "data.yaml"
-json_file = "data.json"
-
-yf.yaml_to_json_file(yaml_file, json_file)
+import yamlify as yf
 ```
 
-```python
-# Convert JSON file to YAML file
-json_file = "data.json"
-yaml_file = "data.yaml"
 
-yf.json_to_yaml_file(json_file, yaml_file)
+**Convert YAML to JSON**
+```python
+yaml_data = """
+   name: John Doe
+   age: 30
+   city: New York
+"""
+
+json_data = yf.yaml_to_json(yaml_data)
+print(json_data)
+```
+
+
+**Convert YAML to JSON from file**
+
+```python
+yaml_file = 'test.yaml'
+json_data = yaml_to_json_from_file(yaml_file)
+print(json_data)
+```
+
+
+**Convert YAML to JSON from URL**
+
+```python
+url = "https://raw.githubusercontent.com/jamiew/yamlify/master/tests/test.yaml"
+json_data = yaml_to_json_from_url(url)
+print(json_data)
+```
+
+
+**Convert YAML to JSON File**
+
+```python
+file_name_ = 'test.json'
+yaml_data = """
+   name: John Doe
+   age: 30
+   city: New York
+"""
+
+yaml_to_json_to_file(file_name, yaml_data)
+```
+
+
+**Convert JSON to YAML**
+
+```python
+json_data = 
+{
+   "name": "John Doe",
+   "age": 30,
+   "city": "New York"
+}
+
+yaml_data = yf.json_to_yaml(json_data)
+print(yaml_data)
 ```
