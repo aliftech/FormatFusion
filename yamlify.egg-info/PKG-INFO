@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: yamlify
-Version: 1.2.1
+Version: 1.2.3
 Summary: YAMLify is a versatile and user-friendly tool that facilitates seamless conversion between YAML and JSON data formats. It offers a comprehensive set of features that cater to diverse needs, making it an invaluable asset for developers, data analysts, and anyone working with these data formats.
 Home-page: https://github.com/aliftech/YAMLify
 Author: Wahyu Krisna Aji
@@ -8,7 +8,7 @@ Author-email: Wahyu Krisna Aji <wahyukrisnaaji32@gmail.com>
 License: MIT
 Project-URL: Homepage, https://github.com/aliftech/YAMLify
 Project-URL: Bug Tracker, https://github.com/aliftech/YAMLify/issues
-Keywords: yamlify
+Keywords: yamlify,json_to_yaml,yaml_to_json
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
