@@ -1,6 +1,6 @@
 import unittest
-from src.yaml_converter.yaml_to_json import *
-from src.json_converter.json_to_yaml import *
+from yamlify.yaml_to_json import *
+from yamlify.json_to_yaml import *
 
 
 class YAMLToJSONTests(unittest.TestCase):
