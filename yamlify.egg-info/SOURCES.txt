@@ -8,8 +8,6 @@ setup.cfg
 setup.py
 test/test.py
 yamlify/__init__.py
-yamlify/json_to_yaml.py
-yamlify/yaml_to_json.py
 yamlify.egg-info/PKG-INFO
 yamlify.egg-info/SOURCES.txt
 yamlify.egg-info/dependency_links.txt
