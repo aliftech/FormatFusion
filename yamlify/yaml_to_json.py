@@ -13,9 +13,7 @@ def yaml_to_json(yaml_data, indent=4, sort_keys=True):
 
 def yaml_to_json_from_file(filename, indent=4, sort_keys=True):
     with open(filename, 'r') as f:
-        yaml_data = ''
-        for line in f:
-            yaml_data += line
+        yaml_data = f.read()
     return yaml_to_json(yaml_data, indent, sort_keys)
 
 
@@ -27,6 +25,9 @@ def yaml_to_json_from_url(url, indent=4, sort_keys=True):
             'URL contains tab characters, which are not allowed in YAML data.')
 
     response = requests.get(url)
+    if not response.ok:
+        raise ValueError(
+            'Failed to fetch URL. HTTP status code: {}'.format(response.status_code))
     yaml_data = response.content
     return yaml_to_json(yaml_data, indent, sort_keys)
 
