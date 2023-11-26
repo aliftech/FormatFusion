@@ -61,8 +61,8 @@ Overall, YAMLify stands out as a powerful and versatile tool that simplifies dat
 import yamlify as yf
 ```
 
-
 **Convert YAML to JSON**
+
 ```python
 yaml_data = """
    name: John Doe
@@ -74,7 +74,6 @@ json_data = yf.yaml_to_json(yaml_data)
 print(json_data)
 ```
 
-
 **Convert YAML to JSON from file**
 
 ```python
@@ -83,7 +82,6 @@ json_data = yaml_to_json_from_file(yaml_file)
 print(json_data)
 ```
 
-
 **Convert YAML to JSON from URL**
 
 ```python
@@ -91,7 +89,6 @@ url = "https://raw.githubusercontent.com/jamiew/yamlify/master/tests/test.yaml"
 json_data = yaml_to_json_from_url(url)
 print(json_data)
 ```
-
 
 **Convert YAML to JSON File**
 
@@ -106,11 +103,10 @@ yaml_data = """
 yaml_to_json_to_file(file_name, yaml_data)
 ```
 
-
 **Convert JSON to YAML**
 
 ```python
-json_data = 
+json_data =
 {
    "name": "John Doe",
    "age": 30,
@@ -119,4 +115,20 @@ json_data =
 
 yaml_data = yf.json_to_yaml(json_data)
 print(yaml_data)
+```
+
+**Convert JSON to YAML from file**
+
+```python
+   json_file = 'test.json'
+   actual_yaml = yf.json_to_yaml(json_data)
+   print(actual_json)
+```
+
+**Convert JSON to YAML from url**
+
+```python
+   url = "https://raw.githubusercontent.com/jamiew/yamlify/master/tests/test.json"
+   yaml_data = json_to_yaml_from_url(url)
+   print(yaml_data)
 ```
