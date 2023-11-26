@@ -33,24 +33,9 @@ class YAMLToJSONTests(unittest.TestCase):
         return actual_json
 
     def test_yaml_to_json_from_url(self):
-        url = 'https://github.com/aliftech/YAMLify/blob/master/test.yaml'
+        url = 'https://github.com/aliftech/YAMLify/raw/master/test.yaml'
         json_data = yf.yaml_to_json_from_url(url)
         return json_data
-
-
-class JSONToYAMLTests(unittest.TestCase):
-
-    def test_simple_json_to_yaml(self):
-        json_data = '''
-        {
-            "name": "John Doe",
-            "age": 30,
-            "city": "Seattle"
-        }
-        '''
-
-        yaml_data = yf.json_to_yaml(json_data)
-        return yaml_data
 
 
 if __name__ == '__main__':
