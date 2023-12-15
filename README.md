@@ -144,3 +144,7 @@ xml_data = """
 json_data = yf.json_to_xml(xml_data)
 return json_data
 ```
+
+## Our Community
+
+**Blog**: <a href="https://yamlify.blogspot.com/">https://yamlify.blogspot.com</a>
