@@ -9,7 +9,7 @@ Change Log
 - Refactor code structure
 - Add json_to_yaml function
 
-1.4.0 ()
+1.4.0 (Dec 15, 2023)
 — — — — — — — — — -
 - Simplify all existed function
 - Remove un-needed existed function
