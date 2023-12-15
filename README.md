@@ -2,41 +2,28 @@
 
 ## About YAMLify
 
-YAMLify is a versatile and user-friendly tool that facilitates seamless conversion between YAML and JSON data formats. It offers a comprehensive set of features that cater to diverse needs, making it an invaluable asset for developers, data analysts, and anyone working with these data formats.
+Effortlessly Convert Between Data Formats with YAMLify
+YAMLify is your one-stop solution for seamless conversion between YAML, JSON, and XML formats. This user-friendly tool empowers developers, data analysts, and anyone working with data to:
 
-**Core Functionalities:**
+**Effortlessly Transform Data:**
 
-- YAML to JSON Conversion: YAMLify effortlessly transforms YAML data into JSON format, ensuring data integrity and preserving the original structure.
+- **YAML to JSON:** Preserve data integrity and structure with ease.
+- **JSON to YAML:** Maintain accuracy and adhere to YAML syntax flawlessly.
+- **XML to JSON:** Transform data from diverse sources into JSON for analysis.
+- **XML to YAML:** Convert XML documents into YAML format for configuration or manipulation.
+- **YAML to XML:** Export YAML data as structured XML documents.
+- **JSON to XML:** Share data effortlessly using standardized XML format.
+  Boost Productivity and Data Integrity:
 
-- JSON to YAML Conversion: Conversely, YAMLify adeptly converts JSON data into YAML format, maintaining data accuracy and adhering to YAML syntax.
+Save time and effort: Automate data conversion tasks and focus on what matters most.
+Minimize errors: Robust error handling identifies and reports discrepancies for efficient troubleshooting.
+Simplify data manipulation: Seamlessly convert between formats to use the tools and languages you love.
+Streamline data exchange: Share data effortlessly between applications and systems that utilize different formats.
+Who benefits from YAMLify?
 
-- Error Handling: YAMLify employs robust error handling mechanisms to identify and report parsing errors, providing valuable insights into data discrepancies.
-
-- Customization Options: YAMLify empowers users to customize the conversion process by tailoring indentation levels, sorting keys, and adjusting other parameters to suit specific requirements.
-
-- Data Input/Output Flexibility: YAMLify supports a variety of data input and output options, enabling users to convert data from and to files, URLs, and strings.
-
-**Benefits of Using YAMLify:**
-
-- Enhanced Productivity: YAMLify streamlines data conversion tasks, saving time and effort, allowing users to focus on core development and analysis activities.
-
-- Improved Data Integrity: YAMLify ensures the accuracy and consistency of data throughout the conversion process, minimizing the risk of data corruption.
-
-- Simplified Data Manipulation: YAMLify facilitates data manipulation by enabling seamless conversion between YAML and JSON formats, catering to various programming languages and data analysis tools.
-
-- Streamlined Data Exchange: YAMLify promotes seamless data exchange between different systems and applications that utilize YAML and JSON formats.
-
-**Target Audience:**
-
-- YAMLify is designed for a broad range of users, including:
-
-  - Developers: YAMLify empowers developers to effortlessly convert configuration files and application data between YAML and JSON formats, enhancing development efficiency.
-
-  - Data Analysts: Data analysts can utilize YAMLify to seamlessly transform data from various sources into JSON format for further analysis and visualization.
-
-  - Technical Professionals: YAMLify serves as a valuable tool for technical professionals working with data in different formats, ensuring smooth data exchange and manipulation.
-
-Overall, YAMLify stands out as a powerful and versatile tool that simplifies data conversion tasks, promotes data integrity, and enhances productivity for a wide range of users.
+- **Developers:** Convert configuration files and application data between formats with ease.
+- **Data Analysts:** Transform data from various sources into JSON for seamless analysis and visualization.
+- **Technical Professionals:** Work with data in different formats smoothly and confidently.
 
 # YAMLify Setup Instructions
 
@@ -74,35 +61,6 @@ json_data = yf.yaml_to_json(yaml_data)
 print(json_data)
 ```
 
-**Convert YAML to JSON from file**
-
-```python
-yaml_file = 'test.yaml'
-json_data = yaml_to_json_from_file(yaml_file)
-print(json_data)
-```
-
-**Convert YAML to JSON from URL**
-
-```python
-url = "https://raw.githubusercontent.com/jamiew/yamlify/master/tests/test.yaml"
-json_data = yaml_to_json_from_url(url)
-print(json_data)
-```
-
-**Convert YAML to JSON File**
-
-```python
-file_name_ = 'test.json'
-yaml_data = """
-   name: John Doe
-   age: 30
-   city: New York
-"""
-
-yaml_to_json_to_file(file_name, yaml_data)
-```
-
 **Convert JSON to YAML**
 
 ```python
@@ -117,18 +75,72 @@ yaml_data = yf.json_to_yaml(json_data)
 print(yaml_data)
 ```
 
-**Convert JSON to YAML from file**
+**Convert YAML to XML**
 
 ```python
-   json_file = 'test.json'
-   actual_yaml = yf.json_to_yaml(json_data)
-   print(actual_json)
+yaml_data = """
+   name: John Doe
+   age: 30
+   address:
+      street: Jalan Merdeka
+      city: Jakarta
+      province: DKI Jakarta
+"""
+result = yf.yaml_to_xml(yaml_data)
+return result
 ```
 
-**Convert JSON to YAML from url**
+**Convert JSON to XML**
 
 ```python
-   url = "https://raw.githubusercontent.com/jamiew/yamlify/master/tests/test.json"
-   yaml_data = json_to_yaml_from_url(url)
-   print(yaml_data)
+json_data = """{
+   "name": "John Doe",
+   "age": 30,
+   "address": {
+         "street": "Jalan Merdeka",
+         "city": "Jakarta",
+         "province": "DKI Jakarta"
+   }
+}"""
+
+result = yf.json_to_xml(json_data)
+return result
+```
+
+**Convert XML to YAML**
+
+```python
+xml_data = """
+   <?xml version="1.0" ?>
+   <root>
+      <name>John Doe</name>
+      <age>30</age>
+      <address>
+         <street>Jalan Merdeka</street>
+         <city>Jakarta</city>
+         <province>DKI Jakarta</province>
+      </address>
+   </root>
+"""
+yaml_data = yf.yaml_to_xml(xml_data)
+return yaml_data
+```
+
+**Convert XML to JSON**
+
+```python
+xml_data = """
+   <?xml version="1.0" ?>
+   <root>
+      <name>John Doe</name>
+      <age>30</age>
+      <address>
+         <street>Jalan Merdeka</street>
+         <city>Jakarta</city>
+         <province>DKI Jakarta</province>
+      </address>
+   </root>
+"""
+json_data = yf.json_to_xml(xml_data)
+return json_data
 ```
