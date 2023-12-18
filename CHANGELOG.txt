@@ -17,3 +17,7 @@ Change Log
 - Add xml_to_yaml
 - Add yaml_to_xml
 - Add json_to_xml
+
+1.5.0 (Dec 18, 2023)
+— — — — — — — — — -
+- Add io functions (read_file, scan_url, and save_file)
