@@ -2,8 +2,8 @@ from setuptools import setup
 
 setup(
     name="yamlify",
-    version="1.4.0",
-    description="YAMLify is a versatile and user-friendly tool that facilitates seamless conversion between YAML and JSON data formats. It offers a comprehensive set of features that cater to diverse needs, making it an invaluable asset for developers, data analysts, and anyone working with these data formats.",
+    version="1.5.0",
+    description="Effortlessly Convert Between Data Formats with YAMLify YAMLify is your one-stop solution for seamless conversion between YAML, JSON, and XML formats.",
     long_description=open("README.md").read(),
     url="https://github.com/aliftech/YAMLify",
     author="Wahyu Krisna Aji",

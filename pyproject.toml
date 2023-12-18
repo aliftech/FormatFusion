@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "yamlify"
-version = "1.4.0"
+version = "1.5.0"
 authors = [
   { name="Wahyu Krisna Aji", email="wahyukrisnaaji32@gmail.com" },
 ]
-description = "YAMLify is a versatile and user-friendly tool that facilitates seamless conversion between YAML and JSON data formats. It offers a comprehensive set of features that cater to diverse needs, making it an invaluable asset for developers, data analysts, and anyone working with these data formats."
+description = "Effortlessly Convert Between Data Formats with YAMLify YAMLify is your one-stop solution for seamless conversion between YAML, JSON, and XML formats."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
