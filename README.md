@@ -145,6 +145,53 @@ json_data = yf.json_to_xml(xml_data)
 return json_data
 ```
 
+## **IO Function**
+
+The `io` module provides functions for reading data from file or url and save data in expected format
+
+### **read_file function**
+
+This function is used to read data from file. Here is the example of using `read_file` function:
+
+```python
+import yamlify as yf
+
+filename = 'test.yaml'
+data = yf.read_file(filename)
+print(data)
+```
+
+### **scan_url function**
+
+This function is used to scan URL content, it will return a data with any format, based on its original format. Here is the example how to use `scan_url` function:
+
+```python
+import yamlify as yf
+
+url = 'example.url.com'
+data = yf.scan_url(url)
+print(data)
+```
+
+### **save_file function**
+
+This function is used to save data into a specific file with specified format (txt, md, html, yml, yaml, json). Here is the example of using `save_file` function:
+
+```python
+import yamlify as yf
+
+data = """name: John Doe
+age: 30
+address:
+  street: Jalan Merdeka
+  city: Jakarta
+  province: DKI Jakarta
+"""
+
+filename = "testing.yaml"
+save_file(filename, data)
+```
+
 ## Our Community
 
 **Blog**: <a href="https://yamlify.blogspot.com/">https://yamlify.blogspot.com</a>
