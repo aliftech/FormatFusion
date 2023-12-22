@@ -21,3 +21,11 @@ Change Log
 1.5.0 (Dec 18, 2023)
 — — — — — — — — — -
 - Add io functions (read_file, scan_url, and save_file)
+
+1.6.0 (Dec 22, 2023)
+— — — — — — — — — -
+- Fix bugs in io functions
+- Improve the performance of some functions
+- Optimize the code of some functions
+- Add function to convert yaml, json, and xml data to csv
+- Add function to convert csv data into yaml, xml, and json 
