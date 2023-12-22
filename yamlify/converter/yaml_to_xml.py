@@ -17,7 +17,7 @@ def yaml_to_xml(data):
         xml_dom = xml.dom.minidom.parseString(result)
         # Adjust the indentation as needed
         prettified_xml = xml_dom.toprettyxml(indent="    ")
-    
+
+        return prettified_xml
     except Exception as e:
-        raise ValueError(f"Error converting YAML data to XML: {e}")
-    return prettified_xml
+        return None

@@ -9,7 +9,7 @@ def xml_to_yaml(data):
 
         xml = xmltodict.parse(data)
         yaml_data = yaml.dump(xml, default_flow_style=False)
+        return yaml_data
 
     except Exception as e:
-        raise ValueError(f"Error converting XML data to YAML: {e}")
-    return yaml_data
+        return None

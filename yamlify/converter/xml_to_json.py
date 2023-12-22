@@ -8,8 +8,7 @@ def xml_to_json(data, indent=4, sort_keys=True):
 
         xml_data = xmltodict.parse(data)
         result = json.dumps(xml_data, indent=indent, sort_keys=sort_keys)
+        return result
 
     except Exception as e:
-        raise ValueError(f"Error converting XML data to JSON: {e}")
-
-    return result
+        return None
