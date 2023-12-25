@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="yamlify",
-    version="1.5.0",
+    version="1.6.0",
     description="Effortlessly Convert Between Data Formats with YAMLify YAMLify is your one-stop solution for seamless conversion between YAML, JSON, and XML formats.",
     long_description=open("README.md").read(),
     url="https://github.com/aliftech/YAMLify",
