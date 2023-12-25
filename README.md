@@ -1,4 +1,4 @@
-# **YAMLify**
+# **FormatFusion**
 
 ## About FormatFusion
 
