@@ -28,4 +28,8 @@ Change Log
 - Improve the performance of some functions
 - Optimize the code of some functions
 - Add function to convert yaml, json, and xml data to csv
-- Add function to convert csv data into yaml, xml, and json 
+- Add function to convert csv data into yaml, xml, and json
+
+0.1.0 (Dec 25, 2023)
+— — — — — — — — — -
+- Change project name to FormatFusion
