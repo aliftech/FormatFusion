@@ -1,18 +1,18 @@
 # **YAMLify**
 
-## About YAMLify
+## About FormatFusion
 
-Effortlessly Convert Between Data Formats with YAMLify
-YAMLify is your one-stop solution for seamless conversion between YAML, JSON, and XML formats. This user-friendly tool empowers developers, data analysts, and anyone working with data.
+Effortlessly Convert Between Data Formats with FormatFusion
+FormatFusion is your one-stop solution for seamless conversion between YAML, JSON, and XML formats. This user-friendly tool empowers developers, data analysts, and anyone working with data.
 
-:star: If you find YAMLify useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.
+:star: If you find FormatFusion useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.
 
-![GitHub contributors](https://img.shields.io/github/contributors/aliftech/YAMLify)
-![GitHub Repo stars](https://img.shields.io/github/stars/aliftech/YAMLify)
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/aliftech/YAMLify/master)
-![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/aliftech/YAMLify)
-![GitHub release (with filter)](https://img.shields.io/github/v/release/aliftech/YAMLify)
-![GitHub License](https://img.shields.io/github/license/aliftech/YAMLify)
+![GitHub contributors](https://img.shields.io/github/contributors/aliftech/FormatFusion)
+![GitHub Repo stars](https://img.shields.io/github/stars/aliftech/FormatFusion)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/aliftech/FormatFusion/master)
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/aliftech/FormatFusion)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/aliftech/FormatFusion)
+![GitHub License](https://img.shields.io/github/license/aliftech/FormatFusion)
 
 ## Features
 
@@ -38,7 +38,7 @@ YAMLify is your one-stop solution for seamless conversion between YAML, JSON, an
 - **Data Analysts:** Transform data from various sources into JSON for seamless analysis and visualization.
 - **Technical Professionals:** Work with data in different formats smoothly and confidently.
 
-# YAMLify Setup Instructions
+# FormatFusion Setup Instructions
 
 ## Prerequisites
 
@@ -50,15 +50,15 @@ YAMLify is your one-stop solution for seamless conversion between YAML, JSON, an
 1. Open a terminal or command prompt.
 2. Run the following command:
    ```bash
-   pip install yamlify
+   pip install FormatFusion
    ```
 
 ## Quick Start
 
-Here is the example of using yamlify to convert yaml data to json.
+Here is the example of using FormatFusion to convert yaml data to json.
 
 ```python
-import yamlify as yf
+import FormatFusion as ff
 
 
 yaml_data = """
@@ -67,11 +67,11 @@ yaml_data = """
    city: New York
 """
 
-json_data = yf.yaml_to_json(yaml_data)
+json_data = ff.yaml_to_json(yaml_data)
 print(json_data)
 ```
 
-For more examples, you can visit our <a href="https://github.com/aliftech/YAMLify/blob/master/DOCUMENTATION.md">documentation</a>.
+For more examples, you can visit our <a href="https://github.com/aliftech/FormatFusion/blob/master/DOCUMENTATION.md">documentation</a>.
 
 ## Contributing
 
@@ -79,14 +79,10 @@ Kindly read our [Contributing Guide](CONTRIBUTING.md) to familiarize yourself wi
 
 ## Contributors
 
-<a href="https://github.com/aliftech/YAMLify/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=aliftech/YAMLify" />
+<a href="https://github.com/aliftech/FormatFusion/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aliftech/FormatFusion" />
 </a>
 
 ## License
 
-YAMLify © 2023, Released under the MIT License.
-
-## Our Community
-
-**Blog**: <a href="https://yamlify.blogspot.com/">https://yamlify.blogspot.com</a>
+FormatFusion © 2023, Released under the MIT License.

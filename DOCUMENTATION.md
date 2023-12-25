@@ -1,9 +1,9 @@
 # Usage
 
-**Import the necessary modules from yamlify**
+**Import the necessary modules from FormatFusion**
 
 ```python
-import yamlify as yf
+import FormatFusion as ff
 ```
 
 **Convert YAML to JSON**
@@ -15,7 +15,7 @@ yaml_data = """
    city: New York
 """
 
-json_data = yf.yaml_to_json(yaml_data)
+json_data = ff.yaml_to_json(yaml_data)
 print(json_data)
 ```
 
@@ -29,7 +29,7 @@ json_data =
    "city": "New York"
 }
 
-yaml_data = yf.json_to_yaml(json_data)
+yaml_data = ff.json_to_yaml(json_data)
 print(yaml_data)
 ```
 
@@ -44,7 +44,7 @@ yaml_data = """
       city: Jakarta
       province: DKI Jakarta
 """
-result = yf.yaml_to_xml(yaml_data)
+result = ff.yaml_to_xml(yaml_data)
 return result
 ```
 
@@ -61,7 +61,7 @@ json_data = """{
    }
 }"""
 
-result = yf.json_to_xml(json_data)
+result = ff.json_to_xml(json_data)
 return result
 ```
 
@@ -80,7 +80,7 @@ xml_data = """
       </address>
    </root>
 """
-yaml_data = yf.yaml_to_xml(xml_data)
+yaml_data = ff.yaml_to_xml(xml_data)
 return yaml_data
 ```
 
@@ -99,7 +99,7 @@ xml_data = """
       </address>
    </root>
 """
-json_data = yf.json_to_xml(xml_data)
+json_data = ff.json_to_xml(xml_data)
 return json_data
 ```
 
@@ -112,10 +112,10 @@ The `io` module provides functions for reading data from file or url and save da
 This function is used to read data from file. Here is the example of using `read_file` function:
 
 ```python
-import yamlify as yf
+import FormatFusion as ff
 
 filename = 'test.yaml'
-data = yf.read_file(filename)
+data = ff.read_file(filename)
 print(data)
 ```
 
@@ -124,10 +124,10 @@ print(data)
 This function is used to scan URL content, it will return a data with any format, based on its original format. Here is the example how to use `scan_url` function:
 
 ```python
-import yamlify as yf
+import FormatFusion as ff
 
 url = 'example.url.com'
-data = yf.scan_url(url)
+data = ff.scan_url(url)
 print(data)
 ```
 
@@ -136,7 +136,7 @@ print(data)
 This function is used to save data into a specific file with specified format (txt, md, html, yml, yaml, json). Here is the example of using `save_file` function:
 
 ```python
-import yamlify as yf
+import FormatFusion as ff
 
 data = """name: John Doe
 age: 30
@@ -149,3 +149,7 @@ address:
 filename = "testing.yaml"
 save_file(filename, data)
 ```
+
+# CSV Data Conversion
+
+This function is used to convert yaml, json, and xml data to csv or vice versa.
