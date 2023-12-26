@@ -1,5 +1,5 @@
 import unittest
-import yamlify as yf
+import FormatFusion as ff
 
 
 class XMLToYAMLTests(unittest.TestCase):
@@ -17,7 +17,7 @@ class XMLToYAMLTests(unittest.TestCase):
             </address>
         </root>
         """
-        yaml_data = yf.yaml_to_xml(xml_data)
+        yaml_data = ff.yaml_to_xml(xml_data)
         return yaml_data
 
 

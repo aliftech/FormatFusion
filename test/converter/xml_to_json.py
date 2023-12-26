@@ -1,5 +1,5 @@
 import unittest
-import yamlify as yf
+import FormatFusion as ff
 
 
 class XMLToJSONTests(unittest.TestCase):
@@ -17,7 +17,7 @@ class XMLToJSONTests(unittest.TestCase):
             </address>
         </root>
         """
-        json_data = yf.json_to_xml(xml_data)
+        json_data = ff.json_to_xml(xml_data)
         return json_data
 
 

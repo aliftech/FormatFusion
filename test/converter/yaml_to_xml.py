@@ -1,5 +1,5 @@
 import unittest
-import yamlify as yf
+import FormatFusion as ff
 
 
 class YAMLToXMLTests(unittest.TestCase):
@@ -13,7 +13,7 @@ class YAMLToXMLTests(unittest.TestCase):
             city: Jakarta
             province: DKI Jakarta
         """
-        json_data = yf.yaml_to_xml(yaml_data)
+        json_data = ff.yaml_to_xml(yaml_data)
         return json_data
 
 
