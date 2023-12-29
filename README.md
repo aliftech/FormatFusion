@@ -58,8 +58,7 @@ FormatFusion is your one-stop solution for seamless conversion between YAML, JSO
 Here is the example of using FormatFusion to convert yaml data to json.
 
 ```python
-import FormatFusion as ff
-
+from FormatFusion.yaml_to_json import yaml_to_json
 
 yaml_data = """
    name: John Doe
@@ -67,7 +66,7 @@ yaml_data = """
    city: New York
 """
 
-json_data = ff.yaml_to_json(yaml_data)
+json_data = yaml_to_json(yaml_data)
 print(json_data)
 ```
 
