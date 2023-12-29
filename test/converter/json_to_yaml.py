@@ -1,5 +1,5 @@
 import unittest
-import FormatFusion as ff
+import FormatFusion.json_to_yaml as ff
 
 
 class JSONToYAMLTests(unittest.TestCase):

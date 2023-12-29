@@ -1,5 +1,5 @@
 import unittest
-import FormatFusion as ff
+from FormatFusion import reader
 
 
 class ReaderTests(unittest.TestCase):
@@ -7,19 +7,19 @@ class ReaderTests(unittest.TestCase):
     def test_read_file(self):
         filename = "../../test/test.json"
 
-        result = ff.read_file(filename)
+        result = reader.read_file(filename)
         return result
 
     def test_scan_url(self):
-        url = 'https://api.github.com'
+        url = 'https://github.com/aliftech/FormatFusion/raw/master/test/test.yaml'
         # This will raise an exception if the URL is not valid or can't be accessed.
-        response = ff.scan_url(url)
+        response = reader.scan_url(url)
         return response
 
     def save_file(self):
         data = self.test_read_file()
         filename = "temp.yaml"
-        ff.save_file(data, filename)
+        reader.save_file(data, filename)
 
 
 if __name__ == '__main__':

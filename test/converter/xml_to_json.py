@@ -1,5 +1,5 @@
 import unittest
-import FormatFusion as ff
+import FormatFusion.xml_to_json as ff
 
 
 class XMLToJSONTests(unittest.TestCase):

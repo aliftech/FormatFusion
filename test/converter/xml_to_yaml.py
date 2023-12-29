@@ -1,5 +1,5 @@
 import unittest
-import FormatFusion as ff
+import FormatFusion.xml_to_yaml as ff
 
 
 class XMLToYAMLTests(unittest.TestCase):
