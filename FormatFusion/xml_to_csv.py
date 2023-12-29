@@ -3,7 +3,7 @@ import xmltodict
 import io
 
 
-def xml_to_csv(data):
+def xml_to_csv(data, tag='root', subtag='item'):
     """Convert XML data to CSV, handling both single and multiple items."""
     try:
         data = data.strip()
@@ -12,7 +12,7 @@ def xml_to_csv(data):
         xml_data = xmltodict.parse(data)
 
         # Extract the items (either a list or a single dictionary)
-        items = xml_data['root'].get('item')
+        items = xml_data[tag].get(subtag)
         if not isinstance(items, list):
             items = [items]  # Convert single item to a list
 
