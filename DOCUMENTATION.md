@@ -24,13 +24,12 @@ print(json_data)
 
 The code above will returned
 
-```
+```json
 {
-    "age": 30,
-    "city": "New York",
-    "name": "John Doe"
+  "age": 30,
+  "city": "New York",
+  "name": "John Doe"
 }
-
 ```
 
 **Convert JSON to YAML**
@@ -51,7 +50,7 @@ print(yaml_data)
 
 The code above will returned
 
-```
+```yaml
 age: 30
 city: New York
 name: John Doe
@@ -76,7 +75,7 @@ print(xml)
 
 The code above will returned
 
-```
+```xml
 <?xml version="1.0" ?>
 <root>
     <name>John Doe</name>
@@ -109,7 +108,7 @@ print(xml)
 
 The code above will returned
 
-```
+```xml
 <?xml version="1.0" ?>
 <root>
     <name>John Doe</name>
@@ -145,13 +144,13 @@ print(yaml_data)
 
 The code above will returned
 
-```
+```yaml
 user:
   address:
     city: Jakarta
     province: DKI Jakarta
     street: Jalan Merdeka
-  age: '30'
+  age: "30"
   name: John Doe
 ```
 
@@ -178,17 +177,17 @@ print(json_data)
 
 The code above will returned
 
-```
+```json
 {
-    "user": {
-        "address": {
-            "city": "Jakarta",
-            "province": "DKI Jakarta",
-            "street": "Jalan Merdeka"
-        },
-        "age": "30",
-        "name": "John Doe"
-    }
+  "user": {
+    "address": {
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "street": "Jalan Merdeka"
+    },
+    "age": "30",
+    "name": "John Doe"
+  }
 }
 ```
 
@@ -261,7 +260,7 @@ print(csv_data)
 
 The code above will returned
 
-```
+```csv
 name,age,address
 John Doe,30,"{'street': 'Jalan Merdeka', 'city': 'Jakarta', 'province': 'DKI Jakarta'}"
 ```
@@ -284,7 +283,7 @@ print(csv_data)
 
 The code above will returned
 
-```
+```csv
 name,age,city
 John Doe,30,New York
 ```
@@ -316,7 +315,7 @@ print(csv_data)
 
 The code above will returned
 
-```
+```csv
 name,age,address
 John Doe,30,"{'street': 'Jalan Merdeka', 'city': 'Jakarta', 'province': 'DKI Jakarta'}"
 ```
@@ -343,8 +342,65 @@ print(yaml_data)
 
 The code above will returned
 
-```
-age: '30'
+```yaml
+age: "30"
 city: New York
 name: John Doe
+```
+
+### **CSV To JSON**
+
+This function is used to convert csv data into json format.
+
+```python
+from FormatFusion.csv_to_json import csv_to_json
+
+csv_data = """name,age,city
+John Doe,30,New York
+Alice,25,Jakarta
+"""
+json_data = csv_to_json(csv_data)
+print(json_data)
+```
+
+The code above will returned
+
+```json
+[
+  { "name": "John Doe", "age": "30", "city": "New York" },
+  { "name": "Alice", "age": "25", "city": "Jakarta" }
+]
+```
+
+### **CSV To XML**
+
+This function is used to convert csv data into xml format.
+
+```python
+from FormatFusion.csv_to_xml import csv_to_xml
+
+csv_data = """name,age,city
+John Doe,30,New York
+Alice,25,Jakarta
+"""
+xml_data = csv_to_xml(csv_data)
+print(xml_data)
+```
+
+The code above will returned
+
+```xml
+<?xml version="1.0" ?>
+<root>
+  <item>
+    <name>John Doe</name>
+    <age>30</age>
+    <city>New York</city>
+  </item>
+  <item>
+    <name>Alice</name>
+    <age>25</age>
+    <city>Jakarta</city>
+  </item>
+</root>
 ```
