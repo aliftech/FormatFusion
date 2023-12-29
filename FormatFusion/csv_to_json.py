@@ -17,8 +17,3 @@ def csv_to_json(csv_data):
 
     except csv.Error as e:
         return None
-
-
-csv_data = "name,age,city\nAlice,30,New York\nBruce,45,Detroit"
-xml_data = csv_to_json(csv_data)
-print(xml_data)

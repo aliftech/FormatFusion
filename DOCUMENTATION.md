@@ -288,3 +288,63 @@ The code above will returned
 name,age,city
 John Doe,30,New York
 ```
+
+### **XML To CSV**
+
+This function is used to convert xml data into csv format.
+
+```python
+from FormatFusion.xml_to_csv import xml_to_csv
+
+xml_data = """
+   <?xml version="1.0" ?>
+   <user>
+      <item>
+        <name>John Doe</name>
+        <age>30</age>
+        <address>
+            <street>Jalan Merdeka</street>
+            <city>Jakarta</city>
+            <province>DKI Jakarta</province>
+        </address>
+      </item>
+   </user>
+"""
+csv_data = xml_to_csv(xml_data, "user", "item")
+print(csv_data)
+```
+
+The code above will returned
+
+```
+name,age,address
+John Doe,30,"{'street': 'Jalan Merdeka', 'city': 'Jakarta', 'province': 'DKI Jakarta'}"
+```
+
+Here is the explanation of the code above:
+
+- in the `csv_data = xml_to_csv(xml_data, "user", "item")` - the xml_data is the data that will be converted to cvs data.
+- "user" - this is the tag name that will be used as a targeted data.
+- "item" - this is the child tag name inside "user" which contains individual user information.
+
+### **CSV To YAML**
+
+This function is used to convert csv data into yaml format.
+
+```python
+from FormatFusion.csv_to_yaml import csv_to_yaml
+
+csv_data = """name,age,city
+John Doe,30,New York
+"""
+yaml_data = csv_to_yaml(csv_data)
+print(yaml_data)
+```
+
+The code above will returned
+
+```
+age: '30'
+city: New York
+name: John Doe
+```
