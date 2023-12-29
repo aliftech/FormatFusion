@@ -33,3 +33,7 @@ Change Log
 0.1.0 (Dec 25, 2023)
 — — — — — — — — — -
 - Change project name to FormatFusion
+
+0.1.1 (Dec 25, 2023)
+— — — — — — — — — -
+- Fixing issue #5 (https://github.com/aliftech/FormatFusion/issues/5)
