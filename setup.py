@@ -17,8 +17,8 @@ setup(
     keywords=["FormatFusion", "json_to_yaml", "yaml_to_json", "json_to_xml", "yaml_to_xml",
               "yaml_to_csv", "json_to_csv", "xml_to_csv", "csv_to_yaml", "csv_to_json", "csv_to_xml"],
     entry_points={
-        'console_scripts': [
-            'ffusion = FormatFusion.__main__:main'
+        "console_scripts": [
+            "ffusion = FormatFusion.cli:main",
         ]
     }
 )

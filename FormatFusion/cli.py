@@ -13,8 +13,6 @@ import yaml_to_csv
 import yaml_to_json
 import yaml_to_xml
 
-
-import os
 import argparse
 
 
@@ -26,6 +24,8 @@ banner = """
 |          |       |
 \\   `-._.-'   `-._/ /
  `.-----.---...---.-----'
+ By: Wahyu Krisna Aji
+ version 0.2.x
 """
 
 
