@@ -1,3 +1,9 @@
+## 0.2.1 (2024-02-06)
+
+### Fix
+
+- **cli.py**: rename cli.py into main.py
+
 ## 0.2.0 (2024-02-06)
 
 ### Feat
