@@ -1,3 +1,9 @@
+## 0.2.0 (2024-02-06)
+
+### Feat
+
+- **FormatFusion/cli.py**: add command line interface
+
 ## 0.1.0 (2024-02-06)
 
 ### Feat
