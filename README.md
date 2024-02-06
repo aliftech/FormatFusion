@@ -72,6 +72,10 @@ print(json_data)
 
 For more examples, you can visit our <a href="https://github.com/aliftech/FormatFusion/blob/master/DOCUMENTATION.md">documentation</a>.
 
+## FormatFusion CLI(Command Line Interface)
+
+This new feature is aimed to make user easily convert file to other format. For further information you can check in [our documentation](DOCUMENTATION.md).
+
 ## Contributing
 
 Kindly read our [Contributing Guide](CONTRIBUTING.md) to familiarize yourself with ToolJet's development process, how to suggest bug fixes and improvements, and the steps for building and testing your changes. <br>
