@@ -404,3 +404,11 @@ The code above will returned
   </item>
 </root>
 ```
+
+# CLI(Command Line Interface)
+
+The CLI(Command Line Interface) is the new feature of FormatFusion. It will make you convert file to another format easier. Here is how to use it:
+
+```shell
+cli.py input_file output_file
+```
