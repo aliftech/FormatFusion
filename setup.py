@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="FormatFusion",
-    version="0.2.3",
+    version="0.2.5",
     description="Effortlessly Convert Between Data Formats with FormatFusion. FormatFusion is your one-stop solution for seamless conversion between YAML, JSON, XML, and CSV formats.",
     long_description=open("README.md").read(),
     url="https://github.com/aliftech/FormatFusion",
