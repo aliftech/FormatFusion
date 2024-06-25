@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling", "xmltodict==0.13.0"]
+requires = ["hatchling", "xmltodict==0.13.0", "pandas==2.0.2"]
 build-backend = "hatchling.build"
 
 [project]
