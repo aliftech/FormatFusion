@@ -1,3 +1,9 @@
+## 0.2.5 (2024-06-25)
+
+### Perf
+
+- update setup and config
+
 ## 0.2.4 (2024-06-25)
 
 ### Refactor
