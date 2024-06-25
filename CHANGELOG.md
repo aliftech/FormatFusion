@@ -1,3 +1,9 @@
+## 0.2.4 (2024-06-25)
+
+### Refactor
+
+- update code structure and adjust the function structure
+
 ## 0.2.3 (2024-02-06)
 
 ### Fix
