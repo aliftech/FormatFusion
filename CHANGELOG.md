@@ -1,3 +1,9 @@
+## 0.2.6 (2024-06-26)
+
+### Refactor
+
+- update setup and pyproject.toml
+
 ## 0.2.5 (2024-06-25)
 
 ### Perf
