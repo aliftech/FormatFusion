@@ -3,13 +3,13 @@
 **Import the necessary modules from FormatFusion**
 
 ```python
-import FormatFusion as ff
+from FormatFusion.converter import Converter
 ```
 
 **Convert YAML to JSON**
 
 ```python
-from FormatFusion.yaml_to_json import yaml_to_json
+from FormatFusion.converter import Converter
 
 yaml_data = """
    name: John Doe
@@ -17,7 +17,7 @@ yaml_data = """
    city: New York
 """
 
-json_data = yaml_to_json(yaml_data)
+json_data = Converter().from_yaml(yaml_data).to_json()
 print(json_data)
 
 ```
@@ -35,7 +35,7 @@ The code above will returned
 **Convert JSON to YAML**
 
 ```python
-from FormatFusion.json_to_yaml import json_to_yaml
+from FormatFusion.converter import Converter
 
 json_data = """{
     "name": "John Doe",
@@ -43,7 +43,7 @@ json_data = """{
     "city": "New York"
 }"""
 
-yaml_data = json_to_yaml(json_data)
+yaml_data = Converter().from_json(json_data).to_yaml()
 print(yaml_data)
 
 ```
@@ -59,7 +59,7 @@ name: John Doe
 **Convert YAML to XML**
 
 ```python
-from FormatFusion.yaml_to_xml import yaml_to_xml
+from FormatFusion.converter import Converter
 
 yaml_data = """
    name: John Doe
@@ -69,7 +69,7 @@ yaml_data = """
       city: Jakarta
       province: DKI Jakarta
 """
-xml = yaml_to_xml(yaml_data)
+xml = Converter().from_yaml(xml).to_xml()
 print(xml)
 ```
 
@@ -91,7 +91,7 @@ The code above will returned
 **Convert JSON to XML**
 
 ```python
-from FormatFusion.json_to_xml import json_to_xml
+from FormatFusion.converter import Converter
 
 json_data = """{
    "name": "John Doe",
@@ -102,7 +102,7 @@ json_data = """{
          "province": "DKI Jakarta"
    }
 }"""
-xml = json_to_xml(json_data)
+xml = Converter().from_json(xml).to_xml()
 print(xml)
 ```
 
@@ -124,7 +124,7 @@ The code above will returned
 **Convert XML to YAML**
 
 ```python
-from FormatFusion.xml_to_yaml import xml_to_yaml
+from FormatFusion.converter import Converter
 
 xml_data = """
    <?xml version="1.0" ?>
@@ -138,7 +138,7 @@ xml_data = """
       </address>
    </user>
 """
-yaml_data = xml_to_yaml(xml_data)
+yaml_data = Converter().from_xml(xml_data).to_yaml()
 print(yaml_data)
 ```
 
@@ -157,7 +157,7 @@ user:
 **Convert XML to JSON**
 
 ```python
-from FormatFusion.xml_to_json import xml_to_json
+from FormatFusion.converter import Converter
 
 xml_data = """
    <?xml version="1.0" ?>
@@ -171,7 +171,7 @@ xml_data = """
       </address>
    </user>
 """
-json_data = xml_to_json(xml_data)
+json_data = Converter().from_xml(xml_data).to_json()
 print(json_data)
 ```
 
@@ -200,9 +200,9 @@ The `io` module provides functions for reading data from file or url and save da
 This function is used to read data from file. Here is the example of using `read_file` function:
 
 ```python
-from FormatFusion import reader
+from FormatFusion.io import IO
 
-data = reader.read_file('data.yaml')
+data = IO().read_file('data.yaml')
 print(data)
 
 ```
@@ -212,9 +212,9 @@ print(data)
 This function is used to scan URL content, it will return a data with any format, based on its original format. Here is the example how to use `scan_url` function:
 
 ```python
-from FormatFusion import reader
+from FormatFusion.io import IO
 
-yaml_data = reader.scan_url(
+yaml_data = IO().scan_url(
     "https://github.com/aliftech/FormatFusion/raw/master/test/test.yaml")
 
 print(yaml_data)
@@ -225,12 +225,12 @@ print(yaml_data)
 This function is used to save data into a specific file with specified format (txt, md, html, yml, yaml, json). Here is the example of using `save_file` function:
 
 ```python
-from FormatFusion import reader
+from FormatFusion.io import IO
 
-yaml_data = reader.scan_url(
+yaml_data = IO().scan_url(
     "https://github.com/aliftech/FormatFusion/raw/master/test/test.yaml")
 
-reader.save_file('data.yaml', yaml_data)
+IO().save_file('data.yaml', yaml_data)
 ```
 
 # CSV Data Conversion
@@ -403,12 +403,4 @@ The code above will returned
     <city>Jakarta</city>
   </item>
 </root>
-```
-
-# CLI(Command Line Interface)
-
-The CLI(Command Line Interface) is the new feature of FormatFusion. It will make you convert file to another format easier. Here is how to use it:
-
-```shell
-cli.py input_file output_file
 ```

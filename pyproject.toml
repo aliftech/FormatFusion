@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "FormatFusion"
-version = "0.2.5"
+version = "0.2.6"
 authors = [
   { name="Wahyu Krisna Aji", email="wahyukrisnaaji32@gmail.com" },
 ]
@@ -16,7 +16,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-
 
 [project.urls]
 "Homepage" = "https://github.com/aliftech/FormatFusion"
